@@ -13,6 +13,7 @@ enum Constants {
     static let dynamicIslandTopSpaceHeight: CGFloat = 11
 }
 
+// Customizable DynamicProgressBar view
 struct DynamicProgressBar: View {
     @Binding var value: Float
 
@@ -89,7 +90,7 @@ struct ContentView: View {
                 Button(action: {
                     self.resetProgressBar()
                 }) {
-                    Text("Reset")
+                    Text("Reset Progress")
                 }.padding()
             }
         }.ignoresSafeArea(.all, edges: .top)
@@ -115,6 +116,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
-// Space above Dynamic Island: 125.1 x 11.1
-// Dynamic Island size: 125.1 x 37
